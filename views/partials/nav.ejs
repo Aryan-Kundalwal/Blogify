@@ -1,0 +1,91 @@
+<style>
+  body {
+    background: #0f172a;
+    color: white;
+    font-family: Inter, Arial, sans-serif;
+  }
+
+  .navbar {
+    border-bottom: 1px solid #334155;
+  }
+
+  .navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+
+  .nav-link {
+    transition: 0.3s;
+  }
+
+  .nav-link:hover {
+    color: #60a5fa !important;
+  }
+
+  .btn-custom {
+    border-radius: 30px;
+    padding: 8px 18px;
+    font-weight: 600;
+  }
+</style>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-black sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="/">Blogify</a>
+
+    <button class="navbar-toggler" type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="/">Home</a>
+        </li>
+
+        <% if (locals.user) { %>
+          <li class="nav-item">
+            <a class="nav-link" href="/blog/add-new">Write Blog</a>
+          </li>
+        <% } %>
+      </ul>
+
+      <ul class="navbar-nav align-items-center">
+        <% if (locals.user) { %>
+
+          <li class="nav-item me-3">
+            <span class="text-light fw-bold">
+              <%= locals.user.fullname %>
+            </span>
+          </li>
+
+          <li class="nav-item">
+            <a class="btn btn-outline-light btn-custom"
+              href="/user/logout">
+              Logout
+            </a>
+          </li>
+
+        <% } else { %>
+
+          <li class="nav-item me-2">
+            <a class="btn btn-outline-light btn-custom"
+              href="/user/signin">
+              Sign In
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="btn btn-light btn-custom"
+              href="/user/signup">
+              Create Account
+            </a>
+          </li>
+
+        <% } %>
+      </ul>
+    </div>
+  </div>
+</nav>
