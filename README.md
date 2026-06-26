@@ -177,11 +177,12 @@ Short-Url/
 
 ## 📌 KEY ENGINEERING HIGHLIGHTS
 
-- Designed a high-performance URL redirection system with minimal latency
-- Implemented QR-based link distribution for mobile-first accessibility
-- Built analytics pipeline for tracking URL usage in real time
-- Integrated ngrok for production-like external API exposure
-- Ensured modular backend design for future scalability
+- Secure authentication using JWT + bcrypt
+- Cloud-based media optimization using Cloudinary
+- Clean MVC architecture for scalability
+- REST API design with modular controllers
+- Efficient MongoDB schema relationships
+- Protected routes with middleware-based authorization
 
 
 
