@@ -167,11 +167,23 @@ Short-Url/
   <img src="screenshots/login.png" width="45%">
 </p>
 
-### 🛠️ Home
+### 🛠️ Home & publish blog
 <p align="center">
   <img src="screenshots/home_1.png" width="45%">
-  <img src="screenshots/home_2.png" width="45%">
+  <img src="screenshots/addblog.png" width="45%">
 </p>
+
+### Add blog
+<p align="center">
+  <img src="screenshots/blog_1.png" width="45%">
+  <img src="screenshots/blog_2.png" width="45%">
+</p>
+
+### Add Comment
+<p align="center">
+  <img src="screenshots/addcomment.png" width="45%">
+</p>
+
 
 
 
