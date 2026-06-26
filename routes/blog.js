@@ -26,6 +26,7 @@ router.get('/add-new' ,(req,res) =>{
 })
 
 router.get('/:id' , async (req , res) =>{
+      await connectTOMongoDB();
     const blog = await Blog.findById(req.params.id).populate('createdBy');
     const comments = await Comment.find({blogId : req.params.id}).populate("createdBy")
     return res.render('blog',{
@@ -37,6 +38,7 @@ router.get('/:id' , async (req , res) =>{
 
  //For Comment...
   router.post("/comment/:blogId" , async (req ,res) => {
+      await connectTOMongoDB();
     await Comment.create({
      content : req.body.content,
      blogId : req.params.blogId,
@@ -46,6 +48,7 @@ router.get('/:id' , async (req , res) =>{
   })
 
 router.post('/' ,upload.single("coverImage"),async (req,res) =>{
+      await connectTOMongoDB();
     const {title ,body} = req.body
    const blog = await Blog.create({
    body , 

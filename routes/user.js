@@ -13,6 +13,7 @@ router.get("/signup" ,(req , res) => {
 })
 
 router.post('/signin' , async (req , res) =>{
+       await connectTOMongoDB();
     const { email , password} = req.body
     try {
         const token = await User.matchPasswordAndGenerateToken(email , password)
@@ -30,6 +31,7 @@ router.get('/logout' ,(req , res) => {
 })
 
 router.post('/signup' , async (req , res) =>{
+       await connectTOMongoDB();
     const {fullName , email , password} = req.body
 
     await User.create({

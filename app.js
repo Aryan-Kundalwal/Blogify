@@ -1,5 +1,5 @@
 require("dotenv").config();
-
+const { connectTOMongoDB } = require("./connection");
 const express = require("express")
 const path = require("path")
 const userRoute = require('./routes/user')
