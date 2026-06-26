@@ -4,10 +4,12 @@
 ![MongoDB](https://img.shields.io/badge/Database-MongoDB-brightgreen)
 ![Express](https://img.shields.io/badge/Framework-Express.js-black)
 ![Cloudinary](https://img.shields.io/badge/Media-Cloudinary-blue)
-![JWT](https://img.shields.io/badge/Auth-JWT-orange)
 
 A scalable full-stack blogging platform where users can create accounts, publish blogs, upload images, and interact through comments. Built with Node.js, Express, MongoDB, and Cloudinary for media storage.
 
+##  🚀 SYSTEM OVERVIEW
+
+Blogify is a full-stack blogging platform designed using a modular MVC architecture to ensure scalability, maintainability, and clean separation of concerns. The system follows a RESTful API approach where the backend handles authentication, business logic, and data management, while the frontend (if integrated separately) consumes these APIs.
 
 ## 🚀 Features
 
@@ -114,13 +116,13 @@ GET /api/comment/:blogId
 ## Clone Repository
 
 ```bash
-git clone https://github.com/Aryan-Kundalwal/Url-Shortner
+git clone https://github.com/Aryan-Kundalwal/Blogify
 ```
 
 ## Navigate to Project Directory
 
 ```bash
-cd SHORT-URL
+cd YOUTUBE-BLOG
 ```
 
 ## Install Dependencies
@@ -140,15 +142,16 @@ npm run dev
 ```text
 Short-Url/
 │
-├── Controller/
+├── config/
 ├── middleware/
 ├── models/
-├── mservices/
+├── services/
 ├── views/
+├── routes/
 ├── screenshots/
 ├── .gitgnore
 ├── connect.js
-├── index.js
+├── app.js
 ├── package-lock.json
 ├── package.json
 ├── vercel.json
@@ -188,12 +191,13 @@ Short-Url/
 
 ## 🚀 FUTURE ENHANCEMENTS
 
-- Custom branded URLs (vanity slugs)
-- Expiration-based short links
-- Advanced analytics dashboard (geo/device tracking)
-- User authentication & history tracking
-- Rate limiting & abuse prevention system
-- Custom domain mapping support
+- Rich text editor (like Quill / TinyMCE)
+- Like & bookmark system
+- User profiles with avatars
+- Follow/unfollow system
+- Advanced blog search & filtering
+- Admin dashboard for moderation
+- Real-time notifications
 
 
 
