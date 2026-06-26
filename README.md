@@ -1,4 +1,4 @@
-# 📝 BLOGIFY – Full Stack Blog Platform
+# 📝 BLOGIFY – Blog Platform
 
 ![Node.js](https://img.shields.io/badge/Backend-Node.js-green)
 ![MongoDB](https://img.shields.io/badge/Database-MongoDB-brightgreen)
@@ -10,6 +10,7 @@ A scalable full-stack blogging platform where users can create accounts, publish
 ##  🚀 SYSTEM OVERVIEW
 
 Blogify is a full-stack blogging platform designed using a modular MVC architecture to ensure scalability, maintainability, and clean separation of concerns. The system follows a RESTful API approach where the backend handles authentication, business logic, and data management.
+
 ## 🚀 Features
 
 ### 👤 Authentication System
