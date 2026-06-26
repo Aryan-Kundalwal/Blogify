@@ -9,8 +9,7 @@ A scalable full-stack blogging platform where users can create accounts, publish
 
 ##  🚀 SYSTEM OVERVIEW
 
-Blogify is a full-stack blogging platform designed using a modular MVC architecture to ensure scalability, maintainability, and clean separation of concerns. The system follows a RESTful API approach where the backend handles authentication, business logic, and data management, while the frontend (if integrated separately) consumes these APIs.
-
+Blogify is a full-stack blogging platform designed using a modular MVC architecture to ensure scalability, maintainability, and clean separation of concerns. The system follows a RESTful API approach where the backend handles authentication, business logic, and data management.
 ## 🚀 Features
 
 ### 👤 Authentication System
@@ -173,13 +172,13 @@ Short-Url/
   <img src="screenshots/addblog.png" width="45%">
 </p>
 
-### Add blog
+### 📝 Blog
 <p align="center">
   <img src="screenshots/blog_1.png" width="45%">
   <img src="screenshots/blog_2.png" width="45%">
 </p>
 
-### Add Comment
+### 💬Add Comment
 <p align="center">
   <img src="screenshots/addcomment.png" width="45%">
 </p>
