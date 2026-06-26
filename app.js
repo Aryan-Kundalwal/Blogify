@@ -28,6 +28,7 @@ const startDB = async () => {
     console.log("DB Error:", err);
   }
 };
+startDB();
 
 app.set("view engine" , "ejs")
 app.set("views" ,path.resolve("./views"))
