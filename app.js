@@ -15,9 +15,19 @@ const app = express()
 const PORT = process.env.PORT || 8000;
 
 
-mongoose.connect(process.env.MONGO_URL)                     //'mongodb://localhost:27017/blogify'
-.then((e) => console.log("MongoDB connected !"))
- .catch(err => console.log("❌ MongoDB connection error:", err));
+let isConnected = false;
+
+const startDB = async () => {
+  if (isConnected) return;
+
+  try {
+    await connectTOMongoDB(process.env.MONGO_URL);
+    isConnected = true;
+    console.log("MongoDB Connected !");
+  } catch (err) {
+    console.log("DB Error:", err);
+  }
+};
 
 app.set("view engine" , "ejs")
 app.set("views" ,path.resolve("./views"))
@@ -49,4 +59,10 @@ app.get("/" , async (req , res) => {
 app.use("/user" , userRoute)
 app.use("/blog" , blogRoute)
 
-app.listen(PORT , ()=>(console.log(`Server started at PORT : ${PORT}`)))
+if (require.main === module) {
+  app.listen(PORT, () => {
+    console.log(`Server Started at PORT ${PORT}`);
+  });
+}
+
+module.exports = app;
