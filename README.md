@@ -8,7 +8,6 @@
 
 A scalable full-stack blogging platform where users can create accounts, publish blogs, upload images, and interact through comments. Built with Node.js, Express, MongoDB, and Cloudinary for media storage.
 
----
 
 ## 🚀 Features
 
@@ -39,7 +38,6 @@ A scalable full-stack blogging platform where users can create accounts, publish
 - Shareable blog URLs
 - Responsive UI for all devices
 
----
 
 ## 🧠 Architecture Overview
 
@@ -50,7 +48,6 @@ A scalable full-stack blogging platform where users can create accounts, publish
 - Cloudinary integration for media handling
 - Modular backend for scalability
 
----
 
 ## 🛠️ Tech Stack
 
@@ -79,7 +76,6 @@ A scalable full-stack blogging platform where users can create accounts, publish
 - cookie-parser
 - nodemon
 
----
 
 ## ⚙️ Workflow
 
@@ -92,7 +88,6 @@ A scalable full-stack blogging platform where users can create accounts, publish
 7. Authenticated users can comment  
 8. Data is rendered dynamically  
 
----
 
 ## 🔗 API Endpoints
 
@@ -100,3 +95,109 @@ A scalable full-stack blogging platform where users can create accounts, publish
 ```http
 POST /api/auth/signup
 POST /api/auth/login
+```
+
+### 📝 Blogs
+```http
+POST /api/blog
+GET /api/blog
+GET /api/blog/:id
+PUT /api/blog/:id
+DELETE /api/blog/:id
+```
+### 💬 Comments
+```http
+POST /api/comment/:blogId
+GET /api/comment/:blogId
+```
+
+## Clone Repository
+
+```bash
+git clone https://github.com/Aryan-Kundalwal/Url-Shortner
+```
+
+## Navigate to Project Directory
+
+```bash
+cd SHORT-URL
+```
+
+## Install Dependencies
+
+```bash
+npm install
+```
+
+## Start Development Server
+
+```bash
+npm run dev
+```
+
+## 📁 Project Structure
+
+```text
+Short-Url/
+│
+├── Controller/
+├── middleware/
+├── models/
+├── mservices/
+├── views/
+├── screenshots/
+├── .gitgnore
+├── connect.js
+├── index.js
+├── package-lock.json
+├── package.json
+├── vercel.json
+│
+└── README.md
+```
+
+## Application Screenshots
+
+### 💺 Sign up & Login
+<p align="center">
+  <img src="screenshots/signup.png" width="45%">
+  <img src="screenshots/login.png" width="45%">
+</p>
+
+### 🛠️ Home
+<p align="center">
+  <img src="screenshots/home_1.png" width="45%">
+  <img src="screenshots/home_2.png" width="45%">
+</p>
+
+
+
+
+
+
+## 📌 KEY ENGINEERING HIGHLIGHTS
+
+- Designed a high-performance URL redirection system with minimal latency
+- Implemented QR-based link distribution for mobile-first accessibility
+- Built analytics pipeline for tracking URL usage in real time
+- Integrated ngrok for production-like external API exposure
+- Ensured modular backend design for future scalability
+
+
+
+## 🚀 FUTURE ENHANCEMENTS
+
+- Custom branded URLs (vanity slugs)
+- Expiration-based short links
+- Advanced analytics dashboard (geo/device tracking)
+- User authentication & history tracking
+- Rate limiting & abuse prevention system
+- Custom domain mapping support
+
+
+
+## 👨‍💻 Author
+
+- GitHub: https://github.com/Aryan-Kundalwal  
+- LinkedIn: https://www.linkedin.com/in/aryankundalwal 
+
